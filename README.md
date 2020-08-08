@@ -1,16 +1,7 @@
 # Trivia Game
 
-This was originally a homework assignment using Javascript and jQuery to manipulate HTML.  I decided to redo it using React.
+Trilogy Education Services Fullstack Web Development Bootcamp UCLA Extension, Spring 2019 Cohort
 
-Overview
-Option Two: Advanced Assignment (Timed Questions)
-You'll create a trivia game that shows only one question until the player answers it or their time runs out.
+This is a homework assignment from Bootcamp.
 
-If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a few seconds, display the next question -- do this without user input.
-
-The scenario is similar for wrong answers and time-outs.
-
-If the player runs out of time, tell the player that time's up and display the correct answer. Wait a few seconds, then show the next question.
-If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
-
-On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
+Player has 2 minutes to answer 4 questions about National Parks.  Once the time expires or the user answers the questions, the score is shown

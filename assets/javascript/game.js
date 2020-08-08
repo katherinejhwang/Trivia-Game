@@ -1,10 +1,6 @@
 $(document).ready(function () {
-  // Hide Quiz Form
-  // $("#quizForm").hide();
-  // $("#gameover").hide();
-
   //Timer function
-  const sec = 15;
+  let sec = 120;
   function startTimer() {
     // $("#quizForm").show();
     setInterval(function () {

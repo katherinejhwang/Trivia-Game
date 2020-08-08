@@ -17,7 +17,6 @@ $(document).ready(function () {
   }
 
   function submitAnswers() {
-    console.log("submitanswers");
     const total = 4;
     const score = 0;
     const incorrect = total - score;
@@ -73,5 +72,8 @@ $(document).ready(function () {
   $("#submit").click(function () {
     console.log("submit button");
     submitAnswers();
+    setInterval(function () {
+      document.getElementById("timer").innerHTML = "Submitted";
+    });
   });
 }); //closes the jquery document ready

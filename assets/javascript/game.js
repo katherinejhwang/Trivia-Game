@@ -3,7 +3,7 @@ $(document).ready(function () {
   $("#gameover").hide();
 
   //Timer function
-  let sec = 10;
+  let sec = 120;
   function startTimer() {
     // $("#quizForm").show();
     setInterval(function () {

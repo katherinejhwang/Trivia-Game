@@ -1,6 +1,9 @@
 $(document).ready(function () {
+  $("#quizForm").hide();
+  $("#gameover").hide();
+
   //Timer function
-  let sec = 120;
+  let sec = 10;
   function startTimer() {
     // $("#quizForm").show();
     setInterval(function () {
@@ -17,6 +20,7 @@ $(document).ready(function () {
   }
 
   function submitAnswers() {
+    console.log("test3");
     const total = 4;
     const score = 0;
     const incorrect = total - score;
@@ -48,32 +52,28 @@ $(document).ready(function () {
       }
     }
 
-    //display results
-    // const results = document.getElementById("results");
-    // results.innerHTML =
-    //   "<h3>Your score is <span>" +
-    //   score +
-    //   "</span> out of <span>" +
-    //   total +
-    //   "</span></h3>";
-    // alert("Your score was " + score + " out of " + total);
     document.getElementById("correct").innerHTML = score;
     document.getElementById("incorrect").innerHTML = incorrect;
+
+    $("#gameover").show();
 
     return false;
   }
 
   $("#start").click(function () {
     startTimer();
+    $("#instructions").hide();
+    $("#quizForm").show();
+    $("#start").hide();
     userInput = [];
   });
 
   //Submit button
   $("#submit").click(function () {
-    console.log("submit button");
     submitAnswers();
     setInterval(function () {
       document.getElementById("timer").innerHTML = "Submitted";
     });
+    $("html, body").animate({ scrollTop: 0 }, "300");
   });
 }); //closes the jquery document ready
